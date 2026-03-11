@@ -1,5 +1,7 @@
+import TabAnimation from "@/components/TabAnimation";
+
 export default function Home() {
-  const placeholders = [1, 2, 3, 4, 5, 6];
+  const placeholders = [2, 3, 4, 5, 6];
 
   return (
     <div className="space-y-8">
@@ -11,6 +13,11 @@ export default function Home() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 h-64 flex flex-col items-center justify-center hover:shadow-md transition-shadow">
+          <TabAnimation autoPlay={true} />
+          <span className="mt-6 text-sm text-gray-400 font-medium">Tabs</span>
+        </div>
+
         {placeholders.map((i) => (
           <div 
             key={i} 
