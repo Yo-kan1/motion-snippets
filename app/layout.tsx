@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Motion Snippets",
-  description: "UIアニメーションの実装コード集",
+  description: "UIアニメーションの実装コード集。 気になるアニメーションをクリックして、実装コードを確認できます。自分のプロジェクトの環境に合った技術スタックのコードを選べるようにする予定です。",
 };
 
 export default function RootLayout({
