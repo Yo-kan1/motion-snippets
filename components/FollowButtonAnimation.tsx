@@ -18,8 +18,8 @@ export default function FollowButtonAnimation({ autoPlay = false }: { autoPlay?:
 
             onClick={() => setIsFollowing(!isFollowing)}
             className={`relative flex items-center justify-center gap-2 px-5 py-2.5 rounded-full font-bold text-sm transition-all duration-300 w-36 overflow-hidden ${isFollowing
-                    ? "bg-neutral-300/80 text-neutral-700"
-                    : "bg-neutral-200/60 text-neutral-500 hover:bg-neutral-200/80"
+                ? "bg-neutral-300/80 text-neutral-700"
+                : "bg-neutral-200/60 text-neutral-500 hover:bg-neutral-200/80"
                 }`}
         >
             <div className="relative w-4 h-4 flex items-center justify-center">
