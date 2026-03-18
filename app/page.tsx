@@ -5,6 +5,7 @@ import FollowButtonExact from "@/components/FollowButtonExact";
 import PaginationAnimation from "@/components/PaginationAnimation";
 import PaginationExact from "@/components/PaginationExact";
 import QuantityAnimation from "@/components/QuantityAnimation";
+import ViewToggleAnimation from "@/components/ViewToggleAnimation";
 
 export default function Home() {
   const placeholders: number[] = [];
@@ -53,6 +54,11 @@ export default function Home() {
         <div className="bg-white rounded-3xl shadow-sm h-64 flex flex-col items-center justify-center hover:shadow-md transition-all cursor-pointer">
           <QuantityAnimation autoPlay={true} />
           <span className="mt-6 text-sm text-neutral-400 font-medium">Quantity</span>
+        </div>
+
+        <div className="bg-white rounded-3xl shadow-sm h-64 flex flex-col items-center justify-center hover:shadow-md transition-all cursor-pointer">
+          <ViewToggleAnimation autoPlay={true} />
+          <span className="mt-6 text-sm text-neutral-400 font-medium">View Format</span>
         </div>
 
         {placeholders.map((i) => (
